@@ -56,7 +56,7 @@ with open(input_file, encoding='UTF-8') as f:
         user = {}
         user['username'] = row[0]
         user['id'] = int(row[1])
-        user['access_hash'] = int(row[2])
+
         user['name'] = row[3]
         users.append(user)
  
