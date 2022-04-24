@@ -107,7 +107,7 @@ for user in users:
 	                continue
 	            user_to_add = client.get_input_entity(user['username'])
 	        elif mode == 2:
-	            user_to_add = InputPeerUser(user['id'], user['access_hash'])
+	            user_to_add = InputPeerUser(user['id'])
 	        else:
 	            sys.exit(re+"[!] Invalid Mode Selected. Please Try Again.")
 	        client(InviteToChannelRequest(target_group_entity,[user_to_add]))
